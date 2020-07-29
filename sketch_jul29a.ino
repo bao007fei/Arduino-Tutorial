@@ -1,59 +1,61 @@
-int ledPin = 8;
+int redLED = 8;
+int dit = 100;
+int dah = 500;
 
 void setup()
 {
-  pinMode(ledPin, OUTPUT);
+  pinMode(redLED, OUTPUT);
 }
 
 void loop()
 {
   // S
-  digitalWrite(ledPin, HIGH);
-  delay(50);
-  digitalWrite(ledPin, LOW);
-  delay(50);
+  digitalWrite(redLED, HIGH);
+  delay(dit);
+  digitalWrite(redLED, LOW);
+  delay(dit);
 
-  digitalWrite(ledPin, HIGH);
-  delay(50);
-  digitalWrite(ledPin, LOW);
-  delay(50);
+  digitalWrite(redLED, HIGH);
+  delay(dit);
+  digitalWrite(redLED, LOW);
+  delay(dit);
 
-  digitalWrite(ledPin, HIGH);
-  delay(50);
-  digitalWrite(ledPin, LOW);
-  delay(50);
+  digitalWrite(redLED, HIGH);
+  delay(dit);
+  digitalWrite(redLED, LOW);
+  delay(dit);
 
   // O
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
+  digitalWrite(redLED, HIGH);
+  delay(dah);
+  digitalWrite(redLED, LOW);
+  delay(dah);
 
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
+  digitalWrite(redLED, HIGH);
+  delay(dah);
+  digitalWrite(redLED, LOW);
+  delay(dah);
 
-  digitalWrite(ledPin, HIGH);
-  delay(500);
-  digitalWrite(ledPin, LOW);
-  delay(500);
+  digitalWrite(redLED, HIGH);
+  delay(dah);
+  digitalWrite(redLED, LOW);
+  delay(dah);
 
   // S
-  digitalWrite(ledPin, HIGH);
-  delay(50);
-  digitalWrite(ledPin, LOW);
-  delay(50);
+  digitalWrite(redLED, HIGH);
+  delay(dit);
+  digitalWrite(redLED, LOW);
+  delay(dit);
 
-  digitalWrite(ledPin, HIGH);
-  delay(50);
-  digitalWrite(ledPin, LOW);
-  delay(50);
+  digitalWrite(redLED, HIGH);
+  delay(dit);
+  digitalWrite(redLED, LOW);
+  delay(dit);
 
-  digitalWrite(ledPin, HIGH);
-  delay(50);
-  digitalWrite(ledPin, LOW);
-  delay(50);
+  digitalWrite(redLED, HIGH);
+  delay(dit);
+  digitalWrite(redLED, LOW);
+  delay(dit);
 
   delay(1000);
 }
