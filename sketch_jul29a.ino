@@ -1,61 +1,48 @@
-int redLED = 8;
-int dit = 100;
-int dah = 500;
+int redLED = 0;
+int greenLED = 1;
+int blueLED = 2;
+
+int fast = 50;
+int slow = 150;
+int realSlow = 200;
+
+int longW = 1000;
 
 void setup()
 {
   pinMode(redLED, OUTPUT);
+  pinMode(greenLED, OUTPUT);
+  pinMode(blueLED, OUTPUT);
 }
 
 void loop()
 {
-  // S
-  digitalWrite(redLED, HIGH);
-  delay(dit);
-  digitalWrite(redLED, LOW);
-  delay(dit);
+  // red LED blink 5 times fast
+  for (size_t i = 0; i < 5; i++)
+  {
+    digitalWrite(redLED, HIGH);
+    delay(fast);
+    digitalWrite(redLED, LOW);
+    delay(fast);
+  }
 
-  digitalWrite(redLED, HIGH);
-  delay(dit);
-  digitalWrite(redLED, LOW);
-  delay(dit);
+  // green LED blink 10 times slow
+  for (size_t i = 0; i < 10; i++)
+  {
+    digitalWrite(greenLED, HIGH);
+    delay(slow);
+    digitalWrite(greenLED, LOW);
+    delay(slow);
+  }
 
-  digitalWrite(redLED, HIGH);
-  delay(dit);
-  digitalWrite(redLED, LOW);
-  delay(dit);
+  // blue LED blink 15 times real slow
+  for (size_t i = 0; i < 15; i++)
+  {
+    digitalWrite(blueLED, HIGH);
+    delay(realSlow);
+    digitalWrite(blueLED, LOW);
+    delay(realSlow);
+  }
 
-  // O
-  digitalWrite(redLED, HIGH);
-  delay(dah);
-  digitalWrite(redLED, LOW);
-  delay(dah);
-
-  digitalWrite(redLED, HIGH);
-  delay(dah);
-  digitalWrite(redLED, LOW);
-  delay(dah);
-
-  digitalWrite(redLED, HIGH);
-  delay(dah);
-  digitalWrite(redLED, LOW);
-  delay(dah);
-
-  // S
-  digitalWrite(redLED, HIGH);
-  delay(dit);
-  digitalWrite(redLED, LOW);
-  delay(dit);
-
-  digitalWrite(redLED, HIGH);
-  delay(dit);
-  digitalWrite(redLED, LOW);
-  delay(dit);
-
-  digitalWrite(redLED, HIGH);
-  delay(dit);
-  digitalWrite(redLED, LOW);
-  delay(dit);
-
-  delay(1000);
+  delay(longW);
 }
