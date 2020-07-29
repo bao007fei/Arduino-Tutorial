@@ -17,7 +17,7 @@ void setup()
 
 void loop()
 {
-  // red LED blink 5 times fast
+  // Red LED blink 5 times fast
   for (size_t i = 0; i < 5; i++)
   {
     digitalWrite(redLED, HIGH);
@@ -26,7 +26,7 @@ void loop()
     delay(fast);
   }
 
-  // green LED blink 10 times slow
+  // Green LED blink 10 times slow
   for (size_t i = 0; i < 10; i++)
   {
     digitalWrite(greenLED, HIGH);
@@ -35,7 +35,7 @@ void loop()
     delay(slow);
   }
 
-  // blue LED blink 15 times real slow
+  // Blue LED blink 15 times real slow
   for (size_t i = 0; i < 15; i++)
   {
     digitalWrite(blueLED, HIGH);
