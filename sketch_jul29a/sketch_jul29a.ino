@@ -1,4 +1,9 @@
-int bitPins[4] = {4, 5, 6, 7};
+int bitPins[4] = {0, 1, 2, 3};
+
+int addPin = 6;
+int clearPin = 7;
+
+int counter = 0;
 
 void setup()
 {
@@ -6,26 +11,34 @@ void setup()
   {
     pinMode(bitPins[i], OUTPUT);
   }
+
+  pinMode(addPin, INPUT);
+  pinMode(clearPin, INPUT);
 }
 
 void loop()
 {
-  for (size_t i = 0; i < 16; i++)
+  if (digitalRead(addPin) == LOW)
   {
-    Serial.println(i);
-
-    for (size_t j = 0; j < 4; j++)
-    {
-      if (bitRead(i, j) == 1)
-      {
-        digitalWrite(bitPins[j], HIGH);
-      }
-      else
-      {
-        digitalWrite(bitPins[j], LOW);
-      }
-    }
-
-    delay(1000);
+    counter++;
   }
+
+  if (digitalRead(clearPin) == LOW)
+  {
+    counter = 0;
+  }
+
+  for (size_t j = 0; j < 4; j++)
+  {
+    if (bitRead(counter, j) == 1)
+    {
+      digitalWrite(bitPins[j], HIGH);
+    }
+    else
+    {
+      digitalWrite(bitPins[j], LOW);
+    }
+  }
+
+  delay(100);
 }
