@@ -1,10 +1,10 @@
-int bitPins[4] = {0, 1, 2, 3};
+int bitPins[4] = {4, 5, 6, 7};
 
 void setup()
 {
   for (size_t i = 0; i < 4; i++)
   {
-    pinMode(i, OUTPUT);
+    pinMode(bitPins[i], OUTPUT);
   }
 }
 
@@ -18,11 +18,11 @@ void loop()
     {
       if (bitRead(i, j) == 1)
       {
-        digitalWrite(j, HIGH);
+        digitalWrite(bitPins[j], HIGH);
       }
       else
       {
-        digitalWrite(j, LOW);
+        digitalWrite(bitPins[j], LOW);
       }
     }
 
