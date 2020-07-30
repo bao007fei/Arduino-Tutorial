@@ -21,13 +21,20 @@ void loop()
   if (digitalRead(addPin) == LOW)
   {
     counter++;
+    binaryDisplay();
+    delay(200);
   }
 
   if (digitalRead(clearPin) == LOW)
   {
     counter = 0;
+    binaryDisplay();
+    delay(200);
   }
+}
 
+void binaryDisplay()
+{
   for (size_t j = 0; j < 4; j++)
   {
     if (bitRead(counter, j) == 1)
@@ -39,6 +46,4 @@ void loop()
       digitalWrite(bitPins[j], LOW);
     }
   }
-
-  delay(100);
 }
