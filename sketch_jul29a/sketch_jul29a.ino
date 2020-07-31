@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 int bitPins[4] = {0, 1, 2, 3};
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -10,6 +13,15 @@ int counter = 0;
 >>>>>>> parent of f6c821f... use varibles
 =======
 >>>>>>> parent of f6c821f... use varibles
+=======
+int bitPins[4] = {4, 5, 6, 7};
+>>>>>>> parent of 63c9cca... almost a binary counter
+=======
+int bitPins[4] = {4, 5, 6, 7};
+>>>>>>> parent of 63c9cca... almost a binary counter
+=======
+int bitPins[4] = {4, 5, 6, 7};
+>>>>>>> parent of 63c9cca... almost a binary counter
 
 void setup()
 {
@@ -17,13 +29,13 @@ void setup()
   {
     pinMode(i, OUTPUT);
   }
-
-  pinMode(addPin, INPUT);
-  pinMode(clearPin, INPUT);
 }
 
 void loop()
 {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   if (digitalRead(addPin) == LOW)
   {
     counter++;
@@ -62,5 +74,62 @@ void binaryDisplay()
       }
 >>>>>>> parent of f6c821f... use varibles
     }
+=======
+  for (size_t i = 0; i < 16; i++)
+  {
+    Serial.println(i);
+
+    for (size_t j = 0; j < 4; j++)
+    {
+      if (bitRead(i, j) == 1)
+      {
+        digitalWrite(bitPins[j], HIGH);
+      }
+      else
+      {
+        digitalWrite(bitPins[j], LOW);
+      }
+    }
+
+    delay(1000);
+>>>>>>> parent of 63c9cca... almost a binary counter
+=======
+  for (size_t i = 0; i < 16; i++)
+  {
+    Serial.println(i);
+
+    for (size_t j = 0; j < 4; j++)
+    {
+      if (bitRead(i, j) == 1)
+      {
+        digitalWrite(bitPins[j], HIGH);
+      }
+      else
+      {
+        digitalWrite(bitPins[j], LOW);
+      }
+    }
+
+    delay(1000);
+>>>>>>> parent of 63c9cca... almost a binary counter
+=======
+  for (size_t i = 0; i < 16; i++)
+  {
+    Serial.println(i);
+
+    for (size_t j = 0; j < 4; j++)
+    {
+      if (bitRead(i, j) == 1)
+      {
+        digitalWrite(bitPins[j], HIGH);
+      }
+      else
+      {
+        digitalWrite(bitPins[j], LOW);
+      }
+    }
+
+    delay(1000);
+>>>>>>> parent of 63c9cca... almost a binary counter
   }
 }
