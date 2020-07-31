@@ -1,10 +1,13 @@
 int bitPins[4] = {0, 1, 2, 3};
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 int addPin = 6;
 int clearPin = 7;
 
 int counter = 0;
+=======
+>>>>>>> parent of f6c821f... use varibles
 =======
 >>>>>>> parent of f6c821f... use varibles
 
