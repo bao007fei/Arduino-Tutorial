@@ -4,10 +4,12 @@
             "name": "Win32",
             "includePath": [
                 "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\tools\\**",
-                "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.7\\**"
+                "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.7\\**",
+                "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.8\\**"
             ],
             "forcedInclude": [
-                "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.7\\cores\\arduino\\Arduino.h"
+                "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.7\\cores\\arduino\\Arduino.h",
+                "C:\\Users\\bao00\\AppData\\Local\\Arduino15\\packages\\Seeeduino\\hardware\\samd\\1.7.8\\cores\\arduino\\Arduino.h"
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": false,
@@ -15,7 +17,6 @@
                     "C:\\Users\\bao00\\Documents\\Arduino\\libraries\\**"
                 ]
             },
-
             "intelliSenseMode": "msvc-x64",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu11",
