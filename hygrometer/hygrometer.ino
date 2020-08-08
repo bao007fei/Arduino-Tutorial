@@ -66,5 +66,5 @@ void loop()
     digitalWrite(9, HIGH);
   }
 
-  delay(10000);
+  delay(1000);
 }
