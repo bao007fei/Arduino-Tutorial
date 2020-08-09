@@ -11,10 +11,6 @@
 // For 1.44" and 1.8" TFT with ST7735 use:
 Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
-float p = 3.1415926;
-char tChar[50];
-char hChar[50];
-
 dht11 DHT11;
 
 void setup(void)
@@ -25,13 +21,8 @@ void setup(void)
   // OR use this initializer if using a 1.8" TFT screen with offset such as WaveShare:
   tft.initR(INITR_GREENTAB); // Init ST7735S chip, green tab
 
-  Serial.println(F("Initialized"));
-
-  uint16_t time = millis();
   tft.fillScreen(ST77XX_BLACK);
-  time = millis() - time;
 
-  Serial.println(time, DEC);
   delay(500);
 }
 
@@ -58,5 +49,6 @@ void loop()
   tft.setTextSize(2);
   tft.print(h);
   tft.print(" %");
+  
   delay(1000);
 }
