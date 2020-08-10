@@ -54,16 +54,17 @@ void loop()
     tft.setTextColor(ST7735_GREEN);
     tft.setTextSize(1);
     tft.println("Temperature:\n");
-    tft.setTextSize(2);
-    tft.fillRect(0, 10, 30, 20, ST7735_BLACK);
+    tft.setTextSize(3);
+    tft.fillRect(0, 10, 40, 30, ST7735_BLACK);
     tft.print(old_t);
     tft.print(" C");
 
-    tft.setCursor(0, 50);
+
+    tft.setCursor(0, 70);
     tft.setTextSize(1);
     tft.println("Humidity:\n");
-    tft.setTextSize(2);
-    tft.fillRect(0, 60, 30, 20, ST7735_BLACK);
+    tft.setTextSize(3);
+    tft.fillRect(0, 80, 40, 30, ST7735_BLACK);
     tft.print(old_h);
     tft.print(" %");
   }
