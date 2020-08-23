@@ -1,3 +1,13 @@
+// GND to GND
+// VCC to 3V
+// SCK to 8
+// SDA to 10
+// SC  to 6
+// DC  to 5
+// RST to 4
+// BLK to none
+
+
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
 #include <SPI.h>
