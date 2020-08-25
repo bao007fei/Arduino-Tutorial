@@ -36,7 +36,7 @@ dht11 DHT11;
 
 int old_t, old_h;
 
-void setup(void)
+void setup()
 {
   Serial.begin(9600);
   Serial.print(F("Hello! ST7735 TFT Test"));
