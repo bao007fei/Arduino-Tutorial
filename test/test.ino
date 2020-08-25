@@ -12,12 +12,12 @@ void loop()
     for (size_t i = 0; i < 255; i++)
     {
         analogWrite(redLED, i);
-        delay(10);
+        delay(20);
     }
 
     for (size_t i = 255; i > 0; i--)
     {
         analogWrite(redLED, i);
-        delay(10);
+        delay(20);
     }
 }
